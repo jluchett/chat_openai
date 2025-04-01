@@ -81,3 +81,60 @@ body{
   text-align: left;
   justify-content: flex-start;
 }
+
+.chat__input-group{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.chat__input{
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+}
+
+.chat__input:focus{
+  border-color: #007bff;
+  box-shadow: 0 0.5px 5px rgba(0, 123, 255, 0.5);
+}
+
+.chat__inputs{
+  display: flex;
+  gap: 1rem;
+}
+
+.chat__select,
+.chat__button{
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  flex: 1;
+}
+
+.chat__select{
+  flex: 2;
+}
+
+.chat__button{
+  flex: 1;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.chat__button:hover{
+  background-color: #0056b3;
+  box-shadow: 0 0.5px 5px rgba(0, 123, 255, 0.5);
+}
