@@ -2,6 +2,6 @@ POST http://localhost:3000/chat
 content-type: application/json
 
 {
-    "text": "Hola, ¿cómo estás?",
+    "text": " no traduzcas, solo responde: cual es la capital de ecuador?",
     "targetLang": "Spanish"
 }

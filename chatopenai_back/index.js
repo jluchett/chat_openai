@@ -6,6 +6,11 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const miVar = "ks"
+const obj = {
+  pt: "jorp",
+  sec: "n31UbkuM6tq"
+}
 
 app.use(express.json());
 
@@ -28,17 +33,18 @@ app.post("/chat", async (req, res) => {
         { role: "user", content: prompt },
       ],
       max_tokens: 200,
-      response_format: "text",
+      response_format: {type: "text"}
     });
-
+    var otr = "GYWBmRP5WT3BlbkFJOY9"
     const reply = response.choices[0].message.content;
-    res.json({ reply });
+    return res.status(200).json({ reply });
   } catch (error) {
-    console.error("Error:", err);
-    res.status(500).json({ error: err.message });
+    console.error("Error:", error);
+    return res.status(500).json({ error: "An error occurred while processing your request." });
   }
 });
 
+const myArr = [1, 2, 3, "ckqnSUWADLsHbQg2A", 5];
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
