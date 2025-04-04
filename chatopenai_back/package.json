@@ -2,10 +2,9 @@
   "name": "chatopenai_back",
   "version": "1.0.0",
   "description": "rest api para proyecto de traducciones openai",
-  "type": "module",
-  "main": "index.js",
+  "main": "index2.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon index2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jorge Luchetta",
