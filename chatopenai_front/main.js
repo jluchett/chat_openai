@@ -46,5 +46,7 @@ translateBtn.addEventListener("click", async() => {
     messagesCont.scrollTop = messagesCont.scrollHeight;
   }
   
+  inputText.value = ""; // Clear the input field after sending the message
+  inputText.focus(); // Keep the focus on the input field
      
 });
